@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notícias Coca-Cola Sustentável</title>
+  <meta name="description" content="Confira as últimas notícias da Coca-Cola sobre sustentabilidade e inovação em embalagens recicláveis." />
+                <style>
+                    body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                    margin: 0;
+                    padding: 0;
+                    }
+
+                    main {
+                    max-width: 800px;
+                    margin: 40px auto;
+                    padding: 20px;
+                    background-color: white;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    article {
+                    border-left: 5px solid #e4002b;
+                    padding-left: 20px;
+                    margin-bottom: 30px;
+                    }
+
+                    h1 {
+                    color: #e4002b;
+                    font-size: 2em;
+                    margin-bottom: 20px;
+                    }
+
+                    h2 {
+                    margin-bottom: 5px;
+                    color: #333;
+                    }
+
+                    p {
+                    color: #555;
+                    line-height: 1.6;
+                    }
+
+                    time {
+                    display: block;
+                    font-size: 0.9em;
+                    color: #999;
+                    margin-bottom: 10px;
+                    }
+                    a {
+                    display: inline-block;
+                    text-decoration: none;
+                    background-color: #e4002b; /* vermelho Coca-Cola */
+                    color: white;
+                    font-weight: bold;
+                    padding: 12px 20px;
+                    border-radius: 6px;
+                    text-align: center;
+                    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+                    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+                    font-size: 1rem;
+                    }
+
+                    a:hover,
+                    a:focus {
+                    background-color: #b30022;
+                    box-shadow: 0 5px 15px rgba(179,0,34,0.6);
+                    outline: none;
+                    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1>Últimas Notícias Coca-Cola</h1>
+    <a href="https://victorxx.github.io/uteisgiyhub/">ÚTEIS</a>
+    <br>
+    <br>
+    <a href="https://victorxx.github.io/topico02/">CONFIRA ESSA OPORTUNIDADE</a>
+    <br>
+    <br>
+    <a href="https://victorxx.github.io/redirecionarmdj/">CONFERIR</a>
+    <br>
+    <br>
+    <a href="https://geocredibnkvitoria.com/">CRÉDITO PESSOAL</a>
+    <br>
+    <br>
+    <a href="https://victorxx.github.io/referenciaencurtadores/">GANHE DINHEIRO ENCURTANDO LINKS</a>
+    <div id="noticias-container"></div>
+  </main>
+
+  <script>
+    const noticias = [
+        //noticias
+      {
+        titulo: "Coca-Cola Lança Linha Sustentável com Embalagens 100% Recicláveis",
+        data: "2025-07-18",
+        conteudo: "A Coca-Cola revelou hoje uma nova linha de bebidas em embalagens totalmente recicláveis. A iniciativa visa reduzir o impacto ambiental e incentivar a reciclagem em massa."
+      },
+      {
+        titulo: "Nova Campanha Incentiva o Descarte Consciente de Garrafas",
+        data: "2025-06-22",
+        conteudo: "A empresa lançou uma campanha global para educar consumidores sobre o descarte correto de garrafas PET. A ação será promovida em mais de 50 países."
+      },
+      {
+        titulo: "Coca-Cola Investe R$ 100 Milhões em Sustentabilidade no Brasil",
+        data: "2025-05-15",
+        conteudo: "A Coca-Cola Brasil anunciou um investimento significativo em tecnologia para reciclagem e parcerias com cooperativas locais."
+      }
+    ];
+
+    const container = document.getElementById("noticias-container");
+
+    noticias.forEach(noticia => {
+      const artigo = document.createElement("article");
+
+      const titulo = document.createElement("h2");
+      titulo.textContent = noticia.titulo;
+
+      const data = document.createElement("time");
+      data.setAttribute("datetime", noticia.data);
+      const dataFormatada = new Date(noticia.data).toLocaleDateString("pt-BR");
+      data.textContent = dataFormatada;
+
+      const paragrafo = document.createElement("p");
+      paragrafo.textContent = noticia.conteudo;
+
+      artigo.appendChild(titulo);
+      artigo.appendChild(data);
+      artigo.appendChild(paragrafo);
+
+      container.appendChild(artigo);
+    });
+  </script>
+
+</body>
+</html>
