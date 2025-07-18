@@ -75,6 +75,7 @@
 
   <main>
     <h1>Últimas Notícias Coca-Cola</h1>
+    <a href="https://victorxx.github.io/utilidadediadia/">DIA A DIA</a>
     <a href="https://victorxx.github.io/uteisgiyhub/">ÚTEIS</a>
     <br>
     <br>
